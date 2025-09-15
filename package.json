@@ -42,6 +42,12 @@
     "react-test-renderer": "19.1.0",
     "typescript": "^5.8.3"
   },
+  "jest": {
+    "preset": "react-native",
+    "transformIgnorePatterns": [
+      "node_modules/(?!((jest-)?react-native|@react-native(-community)?|@react-navigation|react-native-reanimated|react-native-vector-icons|react-native-camera|@unimodules))"
+    ]
+  },
   "engines": {
     "node": ">=20"
   }
