@@ -34,6 +34,11 @@ android {
     }
 }
 
+// Start of fix for react-native-vector-icons build error
+def is = project(':react-native-vector-icons').projectDir
+apply from: new File(is, "fonts.gradle")
+// End of fix
+
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "com.facebook.react:react-native:+"
